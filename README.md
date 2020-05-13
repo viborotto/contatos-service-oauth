@@ -9,5 +9,6 @@ Crie um microsserviço que guarde contatos telefônicos dos usuários. Quando o 
 - [X] Model, DTO Contato e Mapper
 - [X] ContatoService e ContatoRepository
 - [X] ContatoController
-- [ ] Principal
-- [ ] ResourceServerConfig
+- [X] Principal
+- [X] ResourceServerConfig
+- [ ] Vincular Usuario com Contatos
