@@ -4,6 +4,9 @@ import br.com.mastertech.contatosserviceoauth.dto.ContatoDTO;
 import br.com.mastertech.contatosserviceoauth.model.Contato;
 import org.springframework.stereotype.Component;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Component
 public class ContatoMapper {
 
@@ -21,6 +24,16 @@ public class ContatoMapper {
 
         dto.setNome(entity.getNome());
         dto.setTelefone(entity.getTelefone());
+
+        return dto;
+    }
+    public List<ContatoDTO> convertFromEntityListToDtoList(List<Contato> entity) {
+        List<ContatoDTO> dto = new ArrayList<>();
+
+        for (Contato contato : entity) {
+            dto.add(convertFromEntityToDto(contato));
+
+        }
 
         return dto;
     }

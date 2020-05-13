@@ -16,6 +16,10 @@ public class Contato {
 
     private String telefone;
 
+    private Long idUsuario;
+
+    private Long nome_usuario;
+
     public Contato() {
     }
 
@@ -41,5 +45,21 @@ public class Contato {
 
     public void setTelefone(String telefone) {
         this.telefone = telefone;
+    }
+
+    public Long getIdUsuario() {
+        return idUsuario;
+    }
+
+    public void setIdUsuario(Long idUsuario) {
+        this.idUsuario = idUsuario;
+    }
+
+    public Long getNome_usuario() {
+        return nome_usuario;
+    }
+
+    public void setNome_usuario(Long nome_usuario) {
+        this.nome_usuario = nome_usuario;
     }
 }

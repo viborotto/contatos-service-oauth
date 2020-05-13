@@ -20,15 +20,8 @@ public class ContatoService {
         return contatoRepository.save(contato);
     }
 
-    public Contato obterContatoPorId(Long id) {
-        Optional<Contato> contatoOptional = contatoRepository.findById(id);
-
-            return contatoOptional.get();
+    public List<Contato> obterUsuarioPorId(Long id_usuario) {
+        return contatoRepository.findAllByIdUsuario(id_usuario);
     }
-
-    public List<Contato> obterTodosOsContatos(){
-        return contatoRepository.findAll();
-    }
-
 
 }
