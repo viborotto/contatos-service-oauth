@@ -11,4 +11,4 @@ Crie um microsserviço que guarde contatos telefônicos dos usuários. Quando o 
 - [X] ContatoController
 - [X] Principal
 - [X] ResourceServerConfig
-- [ ] Vincular Usuario com Contatos
+- [X] Vincular Usuario com Contatos
